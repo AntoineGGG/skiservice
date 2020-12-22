@@ -1,0 +1,53 @@
+.interieur {
+  width: 100%;
+}
+.reservation {
+  height: 50vh;
+  background-color: #152637;
+  color: white;
+
+  .textReservation {
+    padding: 20px 20px 30px 20px;
+  }
+
+  .reservez {
+    display: flex;
+    justify-content: center;
+
+    .buttonResa {
+      background-color: #94a1ad;
+      text-align: center;
+      width: 75%;
+      border-radius: 5px;
+      cursor: pointer;
+
+      p {
+        padding: 0 10px 0 10px;
+      }
+    }
+  }
+}
+
+.descriptionShop {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .descriptionShopLocation {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+
+    img {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+    }
+    p {
+      padding: 20px;
+    }
+  }
+}

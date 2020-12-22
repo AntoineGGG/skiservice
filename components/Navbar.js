@@ -6,6 +6,11 @@ const Navbar = () => {
       <h3>Les Menuires</h3>
       <ul>
         <li>Accueil</li>
+        <li>
+          <a href='https://location-ski.sport2000.fr/#resort/idResort/318/idShop/870/o/minisite'>
+            Réservations
+          </a>
+        </li>
         <li>Infos</li>
         <li>Contact</li>
       </ul>
