@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 const Layout = (props) => {
   return (
@@ -19,7 +20,9 @@ const Layout = (props) => {
         <meta name='og:title' content='Ski Service Les Menuires' />
       </Head>
       <Navbar />
+
       <div>{props.children}</div>
+      <Footer />
     </div>
   );
 };

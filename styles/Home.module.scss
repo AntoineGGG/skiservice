@@ -1,10 +1,14 @@
-.interieur {
-  width: 100%;
+.imageAccueil {
+  img {
+    width: 100%;
+  }
 }
+
 .reservation {
   height: 50vh;
   background-color: #152637;
   color: white;
+  margin-top: -5px;
 
   .textReservation {
     padding: 20px 20px 30px 20px;
@@ -28,12 +32,13 @@
   }
 }
 
-.descriptionShop {
+.descriptionShopContainer {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  text-align: center;
+  padding: 20px 0 20px 0;
 
-  .descriptionShopLocation {
+  .descriptionShop {
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -44,7 +49,6 @@
     img {
       width: 8rem;
       height: 8rem;
-      border-radius: 50%;
     }
     p {
       padding: 20px;
