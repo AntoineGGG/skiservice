@@ -1,0 +1,16 @@
+.contactContainer {
+  text-align: center;
+}
+.formContact {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    border: solid;
+
+    input {
+      margin: 10px;
+    }
+  }
+}
