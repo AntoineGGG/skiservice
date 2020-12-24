@@ -1,4 +1,6 @@
 import styles from '../styles/Navbar.module.scss';
+import Link from 'next/link';
+
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
@@ -15,8 +17,13 @@ const Navbar = () => {
               Réservations
             </a>
           </li>
-          <li>Infos</li>
-          <li>Contact</li>
+          <li>Informations</li>
+          <Link href='/contact'>
+            <li>Contact</li>
+          </Link>
+
+          <li>04.79.00.68.99</li>
+          <li>sport2000.skiservice@gmail.com</li>
         </ul>
       </div>
     </div>
