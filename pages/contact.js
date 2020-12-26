@@ -1,6 +1,23 @@
 import Layout from '../components/Layout';
 import { useForm } from 'react-hook-form';
 import styles from '../styles/Contact.module.scss';
+require('dotenv').config();
+const mailer = require('nodemailer');
+
+let body = {
+  from: 'your mail-id',
+  to: 'recipient mail-id',
+  subject: 'This is subject',
+  html: '<h2>The html content</h2><br>',
+};
+
+const transporter = mailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+  },
+});
 
 const Contact = () => {
   const { register, handleSubmit, watch, errors } = useForm();
