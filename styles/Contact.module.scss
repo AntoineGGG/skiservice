@@ -1,15 +1,41 @@
 .contactContainer {
   text-align: center;
+  padding-top: 20px;
 }
 .formContact {
   form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px;
-    border: solid;
+    padding: 15px;
+
+    label {
+      font-weight: bold;
+      align-self: flex-start;
+      margin: 20px 0 5px 0;
+    }
 
     input {
+      height: 40px;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #999;
+    }
+    input:focus {
+      border: 1px solid blue;
+    }
+    textarea {
+      border: 1px solid #999;
+      border-radius: 5px;
+      width: 100%;
+      height: 70px;
+    }
+    p {
+      color: red;
+      align-self: flex-start;
+      font-size: 0.8rem;
+    }
+    .submit {
       margin: 10px;
     }
   }
