@@ -1,29 +1,30 @@
+import { useState } from 'react';
 import Layout from '../components/Layout';
 import { useForm } from 'react-hook-form';
 import styles from '../styles/Contact.module.scss';
-require('dotenv').config();
-const mailer = require('nodemailer');
-
-let body = {
-  from: 'your mail-id',
-  to: 'recipient mail-id',
-  subject: 'This is subject',
-  html: '<h2>The html content</h2><br>',
-};
-
-const transporter = mailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
+import { init, sendForm } from 'emailjs-com';
+init('user_b78znFVhzZgrBK0SPbrCm');
 
 const Contact = () => {
   const { register, handleSubmit, watch, errors } = useForm();
   const onSubmit = (data, e) => {
-    console.log(data);
+    generateContactNumber();
+    sendForm('SkiService45978664$', 'template_tbxw0uo', '#contact-form').then(
+      function (response) {
+        console.log('SUCCESS!', response.status, response.text);
+      },
+      function (error) {
+        console.log('FAILED...', error);
+      }
+    );
     e.target.reset();
+  };
+  // Generate contact number
+  const [contactNumber, setContactNumber] = useState('000000');
+
+  const generateContactNumber = () => {
+    const numStr = '000000' + ((Math.random() * 1000000) | 0);
+    setContactNumber(numStr.substring(numStr.length - 6));
   };
   // Message d'erreur pour useForm
   const required = 'Ce champ est obligatoire';
@@ -40,7 +41,9 @@ const Contact = () => {
         </p>
       </div>
       <div className={styles.formContact}>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form id='contact-form' onSubmit={handleSubmit(onSubmit)}>
+          <input type='hidden' name='contact_number' value={contactNumber} />
+
           <label>Nom</label>
           <input
             name='lastname'
