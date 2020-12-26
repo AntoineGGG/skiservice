@@ -35,6 +35,7 @@ const Index = () => {
       <section className={styles.descriptionShopContainer}>
         <h2>Nos Prestations</h2>
         <div className={styles.descriptionShop}>
+          <h3>Location</h3>
           <img
             src='/images/skiservice-rental.png'
             alt='Ski service skis de location'

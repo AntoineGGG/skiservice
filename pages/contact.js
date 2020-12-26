@@ -4,7 +4,14 @@ import styles from '../styles/Contact.module.scss';
 
 const Contact = () => {
   const { register, handleSubmit, watch, errors } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data, e) => {
+    console.log(data);
+    e.target.reset();
+  };
+  // Message d'erreur pour useForm
+  const required = 'Ce champ est obligatoire';
+  const maxLength = 'Vous avez dépassé le nombre maximal de caractères.';
+  const wrongPatternEmail = "Mauvais format d'email";
 
   return (
     <Layout>
@@ -17,20 +24,37 @@ const Contact = () => {
       </div>
       <div className={styles.formContact}>
         <form onSubmit={handleSubmit(onSubmit)}>
-          {/* register your input into the hook by invoking the "register" function */}
           <label>Nom</label>
-          <input name='nom' defaultValue='Votre nom' ref={register} />
+          <input
+            name='lastname'
+            ref={register({ required: true, minLength: 2, maxLength: 40 })}
+          />
+          {errors.lastname && <p>Ce champ est requis !</p>}
           <label>Prénom</label>
-          <input name='prenom' defaultValue='Votre prénom' ref={register} />
-          <label>Email</label>
-          <input name='email' defaultValue='Votre email' ref={register} />
-          <label>Votre message</label>
-          <textarea />
+          <input
+            name='firstname'
+            ref={register({ required: true, minLength: 2, maxLength: 20 })}
+          />
+          {errors.firstname && <p>Ce champ est requis !</p>}
 
-          {/* include validation with required or other standard HTML validation rules */}
-          <input name='exampleRequired' ref={register({ required: true })} />
-          {/* errors will return when field validation fails  */}
-          {errors.exampleRequired && <span>This field is required</span>}
+          <label>Email</label>
+          <input
+            name='email'
+            ref={register({
+              required: true,
+              minLength: 2,
+              maxLength: 99,
+              pattern: /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/,
+            })}
+          />
+          {errors.email && <p>Ce champ est requis !</p>}
+
+          <label>Votre message</label>
+          <textarea
+            name='message'
+            ref={register({ required: true, minLength: 10, maxLength: 200 })}
+          />
+          {errors.message && <span>This field is required</span>}
 
           <input type='submit' />
         </form>

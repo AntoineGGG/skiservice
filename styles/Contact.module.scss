@@ -6,11 +6,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px;
-    border: solid;
+    padding: 15px;
+
+    label {
+      font-weight: bold;
+      align-self: flex-start;
+      margin: 15px 0 10px 0;
+    }
 
     input {
-      margin: 10px;
+      height: 40px;
+      width: 100%;
+      border-radius: 5px;
+    }
+    textarea {
+      border-radius: 5px;
+      width: 100%;
+      height: 70px;
+      margin-bottom: 10px;
+
+      p {
+        color: red;
+      }
     }
   }
 }
