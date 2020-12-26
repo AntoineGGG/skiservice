@@ -8,6 +8,9 @@ init('user_b78znFVhzZgrBK0SPbrCm');
 const Contact = () => {
   const { register, handleSubmit, watch, errors } = useForm();
   const onSubmit = (data, e) => {
+    // Ici le data passe en argument n'est utile que pour
+    // le reset du form.
+
     generateContactNumber();
     sendForm('SkiService45978664$', 'template_tbxw0uo', '#contact-form').then(
       function (response) {
@@ -19,7 +22,8 @@ const Contact = () => {
     );
     e.target.reset();
   };
-  // Generate contact number
+  // Generate contact number, pour avoir un identifiant unique
+  // de message
   const [contactNumber, setContactNumber] = useState('000000');
 
   const generateContactNumber = () => {
@@ -49,13 +53,13 @@ const Contact = () => {
             name='lastname'
             ref={register({ required: true, minLength: 2, maxLength: 40 })}
           />
-          {errors.lastname && <p>Ce champ est requis !</p>}
+          {errors.lastname && <p>Votre nom est requis !</p>}
           <label>Prénom</label>
           <input
             name='firstname'
             ref={register({ required: true, minLength: 2, maxLength: 20 })}
           />
-          {errors.firstname && <p>Ce champ est requis !</p>}
+          {errors.firstname && <p>Votre prénom est requis !</p>}
 
           <label>Email</label>
           <input
@@ -67,16 +71,16 @@ const Contact = () => {
               pattern: /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/,
             })}
           />
-          {errors.email && <p>Ce champ est requis !</p>}
+          {errors.email && <p>L'email est requis !</p>}
 
           <label>Votre message</label>
           <textarea
             name='message'
             ref={register({ required: true, minLength: 10, maxLength: 200 })}
           />
-          {errors.message && <span>This field is required</span>}
+          {errors.message && <p>Il n'y a pas de message !</p>}
 
-          <input type='submit' />
+          <input className={styles.submit} type='submit' />
         </form>
       </div>
     </Layout>
