@@ -3,9 +3,12 @@
     width: 100%;
   }
 }
+.presentation {
+  text-align: center;
+  padding: 20px;
+}
 
 .reservation {
-  height: 50vh;
   background-color: #152637;
   color: white;
   margin-top: -5px;
@@ -17,6 +20,7 @@
   .reservez {
     display: flex;
     justify-content: center;
+    padding-bottom: 30px;
 
     .buttonResa {
       background-color: #94a1ad;
@@ -39,7 +43,6 @@
   padding: 20px 0 20px 0;
 
   .descriptionShop {
-    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;

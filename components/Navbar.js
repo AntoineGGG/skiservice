@@ -11,13 +11,17 @@ const Navbar = () => {
         <span></span>
         <span></span>
         <ul className={styles.menuNav}>
-          <li>Accueil</li>
+          <Link href='/'>
+            <li>Accueil</li>
+          </Link>
           <li>
             <a href='https://location-ski.sport2000.fr/#resort/idResort/318/idShop/870/o/minisite'>
               Réservations
             </a>
           </li>
-          <li>Informations</li>
+          <Link href='/informations'>
+            <li>Informations</li>
+          </Link>
           <Link href='/contact'>
             <li>Contact</li>
           </Link>

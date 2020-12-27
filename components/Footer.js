@@ -5,8 +5,9 @@ const Footer = () => {
     <div className={styles.footer}>
       <div className={styles.footerText}>
         <p>
-          Ski Service est un magaisn de location de matériel de glisse situé
-          dans le quartier des fontanettes aux Menuires. Location de ski et
+          <strong>Ski Service</strong> est un magaisn de{' '}
+          <strong>location de skis</strong> situé dans le quartier des{' '}
+          <strong>fontanettes aux Menuires</strong>. Location de ski et
           snowboard, ski de randonnée, vente d'accessoires de sécurité et
           protection, entretien et réparation de votre matériel.
         </p>
