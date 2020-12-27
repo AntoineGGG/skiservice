@@ -6,13 +6,6 @@ import Link from 'next/link';
 const Index = () => {
   return (
     <Layout>
-      <div className={styles.imageAccueil}>
-        <img
-          src='/images/skiservice-interieur.jpg'
-          className={styles.interieur}
-          alt='Interieur Magasin Ski Service'
-        />
-      </div>
       <div className={styles.presentation}>
         <h2>Bienvenue chez Ski Service Sport2000</h2>
         <p>
@@ -55,34 +48,34 @@ const Index = () => {
             alt='Ski service skis de location'
           />
           <p>
-            Du <strong>matériel de location</strong> pour toutes les pratiques,
-            tous les niveaux. Un choix d'achat de ski pour la piste, le hors
-            piste.
+            Du <strong>matériel de location</strong> pour toutes les pratiques.
+            Plus de 300 paires de skis répartis en plusieurs catégories, du
+            skieur débutant au skieur expert.
           </p>
         </div>
         <div className={styles.descriptionShop}>
-          <h3>Vente accessoires sports d'hiver</h3>
+          <h3>Vente d'accessoires de sports d'hiver</h3>
           <img
             src='/images/skiservice-vente.png'
             alt='Ski Service vente accessoires'
           />
           <p>
-            Nous vendons tout l'équipement nécessaires à votre protection, votre
-            sécurité pour la <strong>pratique des sports d'hiver</strong>, du
-            casque à la crème solaire.
+            Vous trouverez tout l'équipement nécessaire à votre protection et
+            votre sécurité pour la <strong>pratique des sports d'hiver</strong>,
+            du casque à la crème solaire.
           </p>
         </div>
         <div className={styles.descriptionShop}>
-          <h3>Entretien et réparation skis et snowboards</h3>
+          <h3>Entretien et réparation skis et snowboard</h3>
           <img
             src='/images/skiservice-entretien.png'
             alt='Ski Service entretien de ski'
           />
           <p>
-            Nous réparons, entretenons votre matériel de glisse :{' '}
-            <strong>fartage, affutage, surmoulage</strong>, préparation
-            compétition et ski loisir. Déposez vos <strong>skis</strong> le
-            soir, ils seront prêt le lendemain.
+            Nous réparons et entretenons votre matériel de glisse :{' '}
+            <strong>fartage, affûtage, surmoulage</strong> pour le ski loisir ou
+            la compétition. Déposez vos <strong>skis</strong> le soir, ils
+            seront prêt le lendemain.
           </p>
         </div>
         <div className={styles.descriptionShop}>
@@ -92,28 +85,37 @@ const Index = () => {
             alt='Ski Service vente de chaussures et bootfitting'
           />
           <p>
-            A l'aide de nos bootfitter professionnels, nous vous aidons à
+            A l'aide de nos bootfitters professionnels, nous vous aidons à
             trouver la
-            <strong>chaussure de skis</strong> qui vous convient. Vous avez des
-            douleurs au pied dans vos propre chaussures de skis? Le{' '}
-            <strong>bootfitting</strong>
-            est la solution, la douleur n'est pas une fatalité!
+            <strong> chaussure de ski</strong> qui vous convient. Vous avez des
+            douleurs aux pieds dans vos propres chaussures de ski ? Le{' '}
+            <strong>bootfitting</strong> est la solution, la douleur n'est pas
+            une fatalité !
           </p>
         </div>
         <div className={styles.descriptionShop}>
-          <h3>Location skis de randonnée</h3>
+          <h3>Location de skis de randonnée</h3>
           <img
             src='/images/skiservice-rando.png'
             alt='Ski Service location de ski de randonnée'
           />
           <p>
-            Car nous sommes amoureux des espaces vierges, en pleine nature, vous
-            trouverez une sélection de{' '}
-            <strong>matériel de ski de randonnée</strong> pour partir explorer
-            le domaine des <strong>3 Vallées</strong> !
+            Parce que nous sommes amoureux des <strong>espaces vierges</strong>,
+            en <strong>pleine nature</strong>, nous souhaitons vous partager
+            notre passion, vous trouverez dans notre magasin{' '}
+            <strong>Ski Service</strong> aux <strong>Fontanettes</strong> une
+            sélection de <strong>matériel de ski de randonnée</strong> pour
+            partir explorer le domaine des <strong>3 Vallées</strong> !
           </p>
         </div>
       </section>
+      <div className={styles.imageAccueil}>
+        <img
+          src='/images/skiservice-interieur.jpg'
+          className={styles.interieur}
+          alt='Interieur Magasin Ski Service'
+        />
+      </div>
     </Layout>
   );
 };

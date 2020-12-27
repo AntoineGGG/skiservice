@@ -1,6 +1,7 @@
 .imageAccueil {
   img {
     width: 100%;
+    margin-bottom: -7px;
   }
 }
 .presentation {
@@ -9,7 +10,7 @@
 }
 
 .reservation {
-  background-color: #152637;
+  background-color: #000000;
   color: white;
   margin-top: -5px;
 
@@ -23,11 +24,20 @@
     padding-bottom: 30px;
 
     .buttonResa {
-      background-color: #94a1ad;
+      background-color: #000000;
       text-align: center;
       width: 75%;
       border-radius: 5px;
+      border: 1px solid white;
       cursor: pointer;
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+      &:active {
+        background-color: white;
+        color: black;
+      }
 
       p {
         padding: 0 10px 0 10px;
@@ -41,13 +51,20 @@
   flex-direction: column;
   text-align: center;
   padding: 20px 0 20px 0;
+  background-color: #000000;
 
   .descriptionShop {
     display: flex;
+    background-color: white;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+
+    margin: 20px;
 
     img {
       width: 8rem;

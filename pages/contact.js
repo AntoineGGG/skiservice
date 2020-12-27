@@ -40,8 +40,8 @@ const Contact = () => {
       <div className={styles.contactContainer}>
         <h3>Contact</h3>
         <p>
-          Une demande d'informations, de tarifs, disponibilités, n'hésitez pas à
-          nous contacter.
+          Une demande d'informations, de tarifs, de disponibilités ? N'hésitez
+          pas à nous contacter !
         </p>
       </div>
       <div className={styles.formContact}>

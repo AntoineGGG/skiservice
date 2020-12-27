@@ -4,7 +4,9 @@ import Link from 'next/link';
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
-      <h1>Ski Service Les Menuires</h1>
+      <Link href='/'>
+        <h1>Ski Service Les Menuires</h1>
+      </Link>
       <div className={styles.menuToggle}>
         <input type='checkbox' />
         <span></span>
@@ -25,9 +27,6 @@ const Navbar = () => {
           <Link href='/contact'>
             <li>Contact</li>
           </Link>
-
-          <li>04.79.00.68.99</li>
-          <li>sport2000.skiservice@gmail.com</li>
         </ul>
       </div>
     </div>

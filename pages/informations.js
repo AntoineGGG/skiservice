@@ -9,12 +9,13 @@ const Informations = () => {
         <div className={styles.infoText}>
           <h2>Informations</h2>
           <p>
-            Notre magasin est situé dans le quartier des{' '}
-            <strong>fontanettes aux Menuires.</strong> Vous pouvez nous
-            contacter par téléphone au 04.79.00.68.99 ou par mail à l'adresse
-            suivante : sport2000.skiservice@gmail.com . Vous pouvez également
-            nous envoyer votre demande via le formulaire disponible sur la page
-            de <Link href='/contact'>contact.</Link>
+            Notre magasin est situé <strong>rue des Grives</strong>, dans le
+            quartier des <strong>Fontanettes aux Menuires.</strong> Vous pouvez
+            nous contacter par téléphone au 04.79.00.68.99 ou par mail à
+            l'adresse suivante : sport2000.skiservice@gmail.com.
+            <br /> Vous pouvez également nous envoyer votre demande via le
+            formulaire disponible sur la page de{' '}
+            <Link href='/contact'>contact.</Link>
           </p>
         </div>
         <div className={styles.map}>
