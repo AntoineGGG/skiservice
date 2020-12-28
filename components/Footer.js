@@ -1,4 +1,5 @@
 import styles from '../styles/Footer.module.scss';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -18,9 +19,17 @@ const Footer = () => {
           Quartier les <strong>Fontanettes</strong>
           <br /> 73440 <strong>Les Belleville</strong>
         </p>
-        <p>04.79.00.68.99</p>
-        <p>sport2000.skiservice@gmail.com</p>
-        <p>Contact - Mentions légales - Infos</p>
+        <a href='tel:0646654843'>
+          <strong>04.79.00.68.99</strong>
+        </a>
+        <br />
+        <a href='mailto:sport2000.skiservice@gmail.com'>
+          <strong>sport2000.skiservice@gmail.com</strong>
+        </a>
+        <p>
+          <Link href='/contact'>Contact</Link> - Mentions légales -{' '}
+          <Link href='/informations'>Infos</Link>
+        </p>
       </div>
     </div>
   );

@@ -11,8 +11,15 @@ const Informations = () => {
           <p>
             Notre magasin est situé <strong>rue des Grives</strong>, dans le
             quartier des <strong>Fontanettes aux Menuires.</strong> Vous pouvez
-            nous contacter par téléphone au 04.79.00.68.99 ou par mail à
-            l'adresse suivante : sport2000.skiservice@gmail.com.
+            nous contacter par téléphone au{' '}
+            <a href='tel:0646654843'>
+              <strong>04.79.00.68.99</strong>{' '}
+            </a>
+            ou par mail à l'adresse suivante :{' '}
+            <a href='mailto:sport2000.skiservice@gmail.com'>
+              <strong>sport2000.skiservice@gmail.com</strong>
+            </a>
+            .
             <br /> Vous pouvez également nous envoyer votre demande via le
             formulaire disponible sur la page de{' '}
             <Link href='/contact'>contact.</Link>

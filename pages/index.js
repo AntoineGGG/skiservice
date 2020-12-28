@@ -44,7 +44,7 @@ const Index = () => {
         <div className={styles.descriptionShop}>
           <h3>Location de skis et snowboards</h3>
           <img
-            src='/images/skiservice-rental.png'
+            src='/images/skiservice-rental.webp'
             alt='Ski service skis de location'
           />
           <p>
@@ -56,7 +56,7 @@ const Index = () => {
         <div className={styles.descriptionShop}>
           <h3>Vente d'accessoires de sports d'hiver</h3>
           <img
-            src='/images/skiservice-vente.png'
+            src='/images/skiservice-vente.webp'
             alt='Ski Service vente accessoires'
           />
           <p>
@@ -68,7 +68,7 @@ const Index = () => {
         <div className={styles.descriptionShop}>
           <h3>Entretien et réparation skis et snowboard</h3>
           <img
-            src='/images/skiservice-entretien.png'
+            src='/images/skiservice-entretien.webp'
             alt='Ski Service entretien de ski'
           />
           <p>
@@ -81,7 +81,7 @@ const Index = () => {
         <div className={styles.descriptionShop}>
           <h3>Bootfitting</h3>
           <img
-            src='/images/skiservice-bootfitting.png'
+            src='/images/skiservice-bootfitting.webp'
             alt='Ski Service vente de chaussures et bootfitting'
           />
           <p>
@@ -96,7 +96,7 @@ const Index = () => {
         <div className={styles.descriptionShop}>
           <h3>Location de skis de randonnée</h3>
           <img
-            src='/images/skiservice-rando.png'
+            src='/images/skiservice-rando.webp'
             alt='Ski Service location de ski de randonnée'
           />
           <p>
@@ -111,7 +111,7 @@ const Index = () => {
       </section>
       <div className={styles.imageAccueil}>
         <img
-          src='/images/skiservice-interieur.jpg'
+          src='/images/skiservice-interieur.webp'
           className={styles.interieur}
           alt='Interieur Magasin Ski Service'
         />

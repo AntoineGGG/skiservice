@@ -100,3 +100,35 @@
     }
   }
 }
+
+@media screen and (min-width: '400px') {
+  .navbar {
+    background-color: #000000;
+    color: white;
+    h1 {
+      margin: 0;
+      padding: 20px;
+    }
+    .menuToggle {
+      .menuNav {
+        display: flex;
+        position: absolute;
+        top: 5px;
+        right: 0;
+
+        li {
+          list-style-type: none;
+          padding: 0 20px 20px 20px;
+          font-size: 1.5rem;
+          cursor: pointer;
+          &:hover {
+            color: orange;
+          }
+        }
+      }
+      input {
+        display: none;
+      }
+    }
+  }
+}
