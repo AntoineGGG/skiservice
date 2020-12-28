@@ -102,6 +102,10 @@
 }
 
 @media screen and (min-width: '400px') {
+  .navContainer {
+    padding: 0 50px 0 50px;
+    background-color: #d5dee8;
+  }
   .navbar {
     background-color: #000000;
     color: white;
@@ -114,7 +118,7 @@
         display: flex;
         position: absolute;
         top: 5px;
-        right: 0;
+        right: 40px;
 
         li {
           list-style-type: none;
