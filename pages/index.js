@@ -118,6 +118,30 @@ const Index = () => {
             className={styles.interieur}
             alt='Interieur Magasin Ski Service'
           />
+          <img
+            src='/images/mont-brequin-les-menuires.webp'
+            className={styles.imgDesktop}
+            alt='Interieur Magasin Ski Service'
+            style={{ width: '49%', height: 'auto', margin: '0 3px 3px 0' }}
+          />
+          <img
+            src='/images/lac-du-loup.webp'
+            className={styles.imgDesktop}
+            alt='Interieur Magasin Ski Service'
+            style={{ width: '49%', height: 'auto', margin: '0 0 3px 3px' }}
+          />
+          <img
+            src='/images/splitboard-la-becca-les-menuires.webp'
+            className={styles.imgDesktop}
+            alt='Interieur Magasin Ski Service'
+            style={{ width: '49%', height: 'auto', margin: '3px 3px 0 0' }}
+          />
+          <img
+            src='/images/telesiege-becca.webp'
+            className={styles.imgDesktop}
+            alt='Interieur Magasin Ski Service'
+            style={{ width: '49%', height: 'auto', margin: '3px 0 0 3px' }}
+          />
         </div>
       </div>
     </Layout>

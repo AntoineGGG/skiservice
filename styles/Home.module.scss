@@ -68,12 +68,17 @@
       padding: 20px;
     }
   }
+  .imgDesktop {
+    display: none;
+  }
 }
 
-@media screen and (min-width: '400px') {
+@media screen and (min-width: '1050px') {
   .indexContainer {
     padding: 0 50px 0 50px;
     background-color: #d5dee8;
+    font-size: 1.5rem;
+    line-height: 150%;
 
     .presentation {
       padding: 50px;
@@ -96,6 +101,22 @@
       }
       .descriptionShop {
         width: 30%;
+      }
+    }
+    .imageAccueil {
+      background-color: #000000;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      border: solid;
+
+      .imgDesktop {
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+      }
+      .interieur {
+        display: none;
       }
     }
   }
