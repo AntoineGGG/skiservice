@@ -46,3 +46,23 @@
     }
   }
 }
+
+@media screen and (min-width: '1050px') {
+  .contactContainer {
+    background-color: #d5dee8;
+
+    .contactText {
+      background-color: white;
+      margin: 0 50px 0 50px;
+      padding: 20px;
+      border: solid;
+    }
+  }
+  .formContact {
+    margin: 0 50px 0 50px;
+    background-color: #d5dee8;
+    form {
+      margin: 0;
+    }
+  }
+}

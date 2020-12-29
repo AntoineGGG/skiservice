@@ -38,11 +38,13 @@ const Contact = () => {
   return (
     <Layout>
       <div className={styles.contactContainer}>
-        <h3>Contact</h3>
-        <p>
-          Une demande d'informations, de tarifs, de disponibilités ? N'hésitez
-          pas à nous contacter !
-        </p>
+        <div className={styles.contactText}>
+          <h3>Contact</h3>
+          <p>
+            Une demande d'informations, de tarifs, de disponibilités ? N'hésitez
+            pas à nous contacter !
+          </p>
+        </div>
       </div>
       <div className={styles.formContact}>
         <form id='contact-form' onSubmit={handleSubmit(onSubmit)}>
