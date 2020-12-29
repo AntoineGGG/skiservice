@@ -68,9 +68,9 @@
       padding: 20px;
     }
   }
-  .imgDesktop {
-    display: none;
-  }
+}
+.imgDesktop {
+  display: none;
 }
 
 @media screen and (min-width: '1050px') {
@@ -113,6 +113,7 @@
       border: solid;
 
       .imgDesktop {
+        display: block;
         box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
       }
       .interieur {

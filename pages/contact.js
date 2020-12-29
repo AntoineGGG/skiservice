@@ -45,45 +45,46 @@ const Contact = () => {
             pas à nous contacter !
           </p>
         </div>
-      </div>
-      <div className={styles.formContact}>
-        <form id='contact-form' onSubmit={handleSubmit(onSubmit)}>
-          <input type='hidden' name='contact_number' value={contactNumber} />
 
-          <label>Nom</label>
-          <input
-            name='lastname'
-            ref={register({ required: true, minLength: 2, maxLength: 40 })}
-          />
-          {errors.lastname && <p>Votre nom est requis !</p>}
-          <label>Prénom</label>
-          <input
-            name='firstname'
-            ref={register({ required: true, minLength: 2, maxLength: 20 })}
-          />
-          {errors.firstname && <p>Votre prénom est requis !</p>}
+        <div className={styles.formContact}>
+          <form id='contact-form' onSubmit={handleSubmit(onSubmit)}>
+            <input type='hidden' name='contact_number' value={contactNumber} />
 
-          <label>Email</label>
-          <input
-            name='email'
-            ref={register({
-              required: true,
-              minLength: 2,
-              maxLength: 99,
-              pattern: /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/,
-            })}
-          />
-          {errors.email && <p>L'email est requis !</p>}
+            <label>Nom</label>
+            <input
+              name='lastname'
+              ref={register({ required: true, minLength: 2, maxLength: 40 })}
+            />
+            {errors.lastname && <p>Votre nom est requis !</p>}
+            <label>Prénom</label>
+            <input
+              name='firstname'
+              ref={register({ required: true, minLength: 2, maxLength: 20 })}
+            />
+            {errors.firstname && <p>Votre prénom est requis !</p>}
 
-          <label>Votre message</label>
-          <textarea
-            name='message'
-            ref={register({ required: true, minLength: 10, maxLength: 200 })}
-          />
-          {errors.message && <p>Il n'y a pas de message !</p>}
+            <label>Email</label>
+            <input
+              name='email'
+              ref={register({
+                required: true,
+                minLength: 2,
+                maxLength: 99,
+                pattern: /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/,
+              })}
+            />
+            {errors.email && <p>L'email est requis !</p>}
 
-          <input className={styles.submit} type='submit' />
-        </form>
+            <label>Votre message</label>
+            <textarea
+              name='message'
+              ref={register({ required: true, minLength: 10, maxLength: 200 })}
+            />
+            {errors.message && <p>Il n'y a pas de message !</p>}
+
+            <input className={styles.submit} type='submit' />
+          </form>
+        </div>
       </div>
     </Layout>
   );
