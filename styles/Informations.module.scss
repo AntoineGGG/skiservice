@@ -1,11 +1,36 @@
-.infoContainer {
-  text-align: center;
-  padding-top: 20px;
-  margin-bottom: -7px;
-  .infoText {
-    padding: 10px 10px 20px 10px;
+@media screen and (max-width: '1050px') {
+  .infoContainer {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: -7px;
+    .infoText {
+      padding: 10px 10px 20px 10px;
+    }
+    p {
+      line-height: 150%;
+    }
   }
-  p {
-    line-height: 150%;
+}
+
+@media screen and (min-width: '1050px') {
+  .infoContainer {
+    background-color: #d5dee8;
+    .infoText {
+      text-align: center;
+      background-color: white;
+      margin: 0 50px 0 50px;
+      padding: 50px;
+      font-size: 1.5rem;
+      line-height: 150%;
+      h2 {
+        margin-top: 0;
+      }
+      p {
+        margin: 0;
+      }
+    }
+    .map {
+      margin: 0 50px 0 50px;
+    }
   }
 }
