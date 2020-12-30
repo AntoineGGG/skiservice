@@ -91,6 +91,10 @@
     }
     .reservation {
       text-align: center;
+
+      .buttonResa {
+        width: 30%;
+      }
     }
     .descriptionShopContainer {
       display: flex;
@@ -98,6 +102,7 @@
       flex-wrap: wrap;
       justify-content: center;
       width: 100%;
+      padding-top: 100px;
 
       h2 {
         color: white;
@@ -114,7 +119,6 @@
       justify-content: center;
       flex-wrap: wrap;
       width: 100%;
-      border: solid;
 
       .imgDesktop {
         display: block;
