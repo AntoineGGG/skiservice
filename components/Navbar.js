@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 const Navbar = () => {
+  // utilisation de userouter pour attribuer une classe active
+  // à la navbar en fonction de la page en cours.
   const router = useRouter();
   return (
     <div className={styles.navContainer}>
