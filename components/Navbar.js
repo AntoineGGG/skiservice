@@ -1,7 +1,9 @@
 import styles from '../styles/Navbar.module.scss';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
+  const router = useRouter();
   return (
     <div className={styles.navContainer}>
       <div className={styles.navbar}>
@@ -15,7 +17,9 @@ const Navbar = () => {
           <span></span>
           <ul className={styles.menuNav}>
             <Link href='/'>
-              <li>Accueil</li>
+              <li className={router.pathname === '/' ? styles.active : ''}>
+                Accueil
+              </li>
             </Link>
             <li>
               <a href='https://location-ski.sport2000.fr/#resort/idResort/318/idShop/870/o/minisite'>
@@ -23,10 +27,20 @@ const Navbar = () => {
               </a>
             </li>
             <Link href='/informations'>
-              <li>Informations</li>
+              <li
+                className={
+                  router.pathname === '/informations' ? styles.active : ''
+                }
+              >
+                Informations
+              </li>
             </Link>
             <Link href='/contact'>
-              <li>Contact</li>
+              <li
+                className={router.pathname === '/contact' ? styles.active : ''}
+              >
+                Contact
+              </li>
             </Link>
           </ul>
         </div>

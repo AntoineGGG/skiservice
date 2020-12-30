@@ -113,12 +113,15 @@
       margin: 0;
       padding: 20px;
     }
+    .active {
+      color: #fe222c;
+    }
     .menuToggle {
       .menuNav {
         display: flex;
         position: absolute;
         top: 5px;
-        right: 40px;
+        right: 50px;
 
         li {
           list-style-type: none;
