@@ -20,7 +20,7 @@ const Footer = () => {
             Quartier les <strong>Fontanettes</strong>
             <br /> 73440 <strong>Les Belleville</strong>
           </p>
-          <a href='tel:0646654843'>
+          <a href='tel:0479006899'>
             <strong>04.79.00.68.99</strong>
           </a>
           <br />

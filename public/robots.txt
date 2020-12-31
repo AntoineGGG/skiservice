@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Host: http://ski-service-les-menuires.fr
+Sitemap: http://ski-service-les-menuires.fr/sitemap.xml

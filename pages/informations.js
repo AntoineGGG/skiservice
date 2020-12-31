@@ -12,7 +12,7 @@ const Informations = () => {
             Notre magasin est situé <strong>rue des Grives</strong>, dans le
             quartier des <strong>Fontanettes aux Menuires.</strong> Vous pouvez
             nous contacter par téléphone au{' '}
-            <a href='tel:0646654843'>
+            <a href='tel:0479006899'>
               <strong>04.79.00.68.99</strong>{' '}
             </a>
             ou par mail à l'adresse suivante :{' '}

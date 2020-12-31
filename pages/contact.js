@@ -30,11 +30,6 @@ const Contact = () => {
     const numStr = '000000' + ((Math.random() * 1000000) | 0);
     setContactNumber(numStr.substring(numStr.length - 6));
   };
-  // Message d'erreur pour useForm
-  const required = 'Ce champ est obligatoire';
-  const maxLength = 'Vous avez dépassé le nombre maximal de caractères.';
-  const wrongPatternEmail = "Mauvais format d'email";
-
   return (
     <Layout>
       <div className={styles.contactContainer}>
