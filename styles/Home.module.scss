@@ -76,6 +76,9 @@
 .imgDesktop {
   display: none;
 }
+.slideContainer {
+  display: none;
+}
 
 @media screen and (min-width: '1050px') {
   .indexContainer {
@@ -127,6 +130,17 @@
       }
       .interieur {
         display: none;
+      }
+    }
+
+    .slideContainer {
+      display: block;
+      background-color: #262626;
+      padding: 50px;
+      img {
+        height: 600px;
+        width: auto;
+        margin: auto;
       }
     }
   }

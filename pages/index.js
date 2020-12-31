@@ -1,7 +1,21 @@
-import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
 import Layout from '../components/Layout';
-import Link from 'next/link';
+import { Zoom } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
+
+const slideImages = [
+  '/images/cairn-ski-service-les-menuires.webp',
+  '/images/chaussures-skis-location-les-menuires.webp',
+  '/images/electric-goggle-ski-service-les-menuires-2.webp',
+  '/images/electric-goggle-ski-service-les-menuires.webp',
+  '/images/skis-location-junior-ski-service-les-menuires.webp',
+  '/images/skis-location-ski-service-les-menuires.webp',
+  '/images/smith-helmet-ski-service-les-menuires.webp',
+];
+
+const slideProperty = {
+  duration: 3000,
+};
 
 const Index = () => {
   return (
@@ -23,7 +37,7 @@ const Index = () => {
         <section className={styles.reservation}>
           <div className={styles.textReservation}>
             <p>
-              Réserver votre matériels en ligne n'a jamais été aussi simple :
+              Réserver votre matériel en ligne n'a jamais été aussi simple :
               {<br />}
               {<br />}
               Choisissez vos dates de <strong>séjour</strong>, le{' '}
@@ -118,30 +132,18 @@ const Index = () => {
             className={styles.interieur}
             alt='Interieur Magasin Ski Service'
           />
-          <img
-            src='/images/mont-brequin-les-menuires.webp'
-            className={styles.imgDesktop}
-            alt='Interieur Magasin Ski Service'
-            style={{ width: '49%', height: 'auto', margin: '0 3px 3px 0' }}
-          />
-          <img
-            src='/images/lac-du-loup.webp'
-            className={styles.imgDesktop}
-            alt='Interieur Magasin Ski Service'
-            style={{ width: '49%', height: 'auto', margin: '0 0 3px 3px' }}
-          />
-          <img
-            src='/images/splitboard-la-becca-les-menuires.webp'
-            className={styles.imgDesktop}
-            alt='Interieur Magasin Ski Service'
-            style={{ width: '49%', height: 'auto', margin: '3px 3px 0 0' }}
-          />
-          <img
-            src='/images/telesiege-becca.webp'
-            className={styles.imgDesktop}
-            alt='Interieur Magasin Ski Service'
-            style={{ width: '49%', height: 'auto', margin: '3px 0 0 3px' }}
-          />
+        </div>
+
+        <div className={styles.slideContainer}>
+          <Zoom>
+            {slideImages.map((each, index) => (
+              <img
+                key={index}
+                src={each}
+                alt='ski service pictures caroussel'
+              />
+            ))}
+          </Zoom>
         </div>
       </div>
     </Layout>
