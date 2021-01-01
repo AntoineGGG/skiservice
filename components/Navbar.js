@@ -13,7 +13,7 @@ const Navbar = () => {
           <h1>Ski Service Les Menuires</h1>
         </Link>
         <div className={styles.menuToggle}>
-          <input type='checkbox' />
+          <input label='burger menu' type='checkbox' />
           <span></span>
           <span></span>
           <span></span>

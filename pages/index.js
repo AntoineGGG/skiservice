@@ -13,10 +13,6 @@ const slideImages = [
   '/images/smith-helmet-ski-service-les-menuires.webp',
 ];
 
-const slideProperty = {
-  duration: 3000,
-};
-
 const Index = () => {
   return (
     <Layout>
@@ -33,6 +29,7 @@ const Index = () => {
             aux <strong>Menuires</strong>, dans le domaine des{' '}
             <strong>3 Vallées.</strong>
           </p>
+          <img src='/images/sport2000-logo.webp' alt='sport2000 logo' />
         </div>
         <section className={styles.reservation}>
           <div className={styles.textReservation}>
